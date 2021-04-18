@@ -470,7 +470,7 @@ def get_paths(
             total=len(chemical_dict) * len(disease_dict)
     ):
         if chemical in chemical_els and disease in disease_els:
-            for lmax in range(5, 9):
+            for lmax in range(3, 8):
                 dict_key = f'lmax_{lmax}'
 
                 if openbio:
