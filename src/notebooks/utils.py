@@ -672,7 +672,7 @@ def get_transcriptomic_paths(
         source: str,
         target: str,
         all_paths: List[list],
-        chemical_dict: dict,
+        drug_dict: dict,
         disease_dict: dict,
         clinical_pair_dict=dict,
 ) -> [dict, dict]:
@@ -685,10 +685,10 @@ def get_transcriptomic_paths(
         nodes.update(path_set)
 
     # Getting concordant paths with the transcriptomic data
-    chemical_filtered_paths = rcr_all_paths(
+    drug_filtered_paths = rcr_all_paths(
         directed_graph,
         all_paths,
-        chemical_dict,
+        drug_dict,
         errors_allowed=ERRORS_ALLOWED
     )
     disease_filtered_paths = disease_rcr_all_paths(
@@ -710,7 +710,7 @@ def get_transcriptomic_paths(
         "target": target,
         "number_of_paths": len(all_paths),
         "in_clinical_trial": trial_pair,
-        "chemical_paths": chemical_filtered_paths,
+        "drug_paths": drug_filtered_paths,
         "disease_paths": disease_filtered_paths,
         "subgraph_size": directed_graph.number_of_nodes(),
         "number_of_unique_nodes": len(nodes),
