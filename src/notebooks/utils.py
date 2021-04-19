@@ -20,7 +20,6 @@ import matplotlib.pyplot as plt
 from drug2ways.alternative_graph_traversal import enumerate_paths
 from drug2ways.pathway import _prepare_json
 from drug2ways.wrapper import generate_reduced_graph
-from drug2ways.graph_reader import load_graph
 from drug2ways.rcr import (rcr_all_paths, validate_paths_with_disease_data,
                            disease_rcr_all_paths)
 from drug2ways.cli_helper import _setup_logging
@@ -78,10 +77,10 @@ def create_venn_diagram(
 
 
 def get_stats(
-        network_1: dict,
-        network_2: dict,
-        disease_set: dict = None,
-        chemical_set: dict = None
+    network_1: dict,
+    network_2: dict,
+    disease_set: dict = None,
+    chemical_set: dict = None
 ) -> None:
     """Get KG overlap information."""
 
@@ -124,8 +123,8 @@ def get_stats(
 
 
 def harmonize_dataset(
-        data_dict: dict,
-        threshold: int = 0,
+    data_dict: dict,
+    threshold: int = 0,
 ) -> dict:
     """Converts expression data values to +1/-1 based on threshold."""
 
@@ -153,8 +152,8 @@ def harmonize_dataset(
 
 
 def normalize_nodes(
-        network_df: pd.DataFrame,
-        file_name: str
+    network_df: pd.DataFrame,
+    file_name: str
 ) -> pd.DataFrame:
     """ Harmonizing different namespaces into selected ones. """
 
@@ -223,9 +222,9 @@ def normalize_nodes(
 
 
 def filter_graph(
-        network_df: pd.DataFrame,
-        file_name: str,
-        data_dict: dict
+    network_df: pd.DataFrame,
+    file_name: str,
+    data_dict: dict
 ):
     """Filter network to have disease and chemicals specific to the dataset."""
     normalized_file_path = os.path.join(KG_DATA_PATH, 'normalized', file_name)
@@ -273,7 +272,7 @@ def filter_graph(
 
 
 def create_graph_from_df(
-        graph_df
+    graph_df
 ) -> DiGraph:
     """Create fully connected graph from dataframe."""
     graph = DiGraph()
@@ -308,11 +307,11 @@ def create_graph_from_df(
 
 
 def create_subgraph(
-        graph_df: pd.DataFrame,
-        disease: str,
-        chemical: str,
-        disease_dict: dict,
-        chemical_dict: dict,
+    graph_df: pd.DataFrame,
+    disease: str,
+    chemical: str,
+    disease_dict: dict,
+    chemical_dict: dict,
 ) -> pd.DataFrame:
     """Create subgraph based on disease and chemical gene overlap."""
     subgraph_df = pd.DataFrame(columns=['source', 'target', 'polarity'])
@@ -374,9 +373,9 @@ def create_subgraph(
 
 
 def _validation_paths(
-        reduced_graph: DiGraph,
-        paths: List[List[int]],
-        id2node: Mapping[int, str],
+    reduced_graph: DiGraph,
+    paths: List[List[int]],
+    id2node: Mapping[int, str],
 ) -> [dict, set]:
     """Get paths between nodes."""
     results = defaultdict(Counter)
@@ -424,12 +423,35 @@ def _validation_paths(
     return final_paths
 
 
+def load_graph(
+    graph_df: pd.DataFrame
+):
+    graph = DiGraph()
+
+    for sub_name, obj_name, relation in tqdm(
+            graph_df.values,
+            total=graph_df.shape[0],
+            desc='Loading graph'
+    ):
+        # Store edge in the graph
+        graph.add_edge(
+            sub_name,
+            obj_name,
+            relation=relation,
+        )
+
+    logger.debug(
+        f"Report on the number of relations: {dict(Counter(graph_df.polarity))}"
+    )
+    return graph
+
+
 def get_paths(
-        graph_df: pd.DataFrame,
-        disease_dict: dict,
-        chemical_dict: dict,
-        graph_name: str,
-        openbio: bool
+    graph_df: pd.DataFrame,
+    disease_dict: dict,
+    chemical_dict: dict,
+    graph_name: str,
+    openbio: bool
 ) -> None:
     """Get paths in graph."""
     detailed_info = {}
@@ -437,10 +459,10 @@ def get_paths(
     if not os.path.exists(DATA_DIR):
         os.makedirs(DATA_DIR)
 
-    CACHE_DIR = os.path.join(DATA_DIR, 'lmax-pairs')
-
-    if not os.path.exists(CACHE_DIR):
-        os.makedirs(CACHE_DIR)
+    # CACHE_DIR = os.path.join(DATA_DIR, 'lmax-pairs')
+    #
+    # if not os.path.exists(CACHE_DIR):
+    #     os.makedirs(CACHE_DIR)
 
     chemical_els = set(
         graph_df[
@@ -453,7 +475,9 @@ def get_paths(
         ]['target']
     )
 
-    graph = load_graph(graph_df=graph_df)
+    graph = load_graph(
+        graph_df=graph_df
+    )
 
     # Get the reduced version of the graph and the node2id mapping
     target_nodes = list(disease_dict.keys())
@@ -473,13 +497,13 @@ def get_paths(
             for lmax in range(3, 8):
                 dict_key = f'lmax_{lmax}'
 
-                if openbio:
-                    file_name = graph_name + '-' + dict_key + '-openbio.json'
-                else:
-                    file_name = graph_name + '-' + dict_key + '-custom.json'
-
-                if os.path.exists(os.path.join(CACHE_DIR, file_name)):
-                    continue
+                # if openbio:
+                #     file_name = graph_name + '-' + dict_key + '-openbio.json'
+                # else:
+                #     file_name = graph_name + '-' + dict_key + '-custom.json'
+                #
+                # if os.path.exists(os.path.join(CACHE_DIR, file_name)):
+                #     continue
 
                 if dict_key not in detailed_info:
                     detailed_info[dict_key] = []
@@ -518,20 +542,22 @@ def get_paths(
                         }
                     )
 
-    for el in detailed_info:
+    return detailed_info
 
-        if openbio:
-            file_name = graph_name + '-' + el + '-openbio.json'
-        else:
-            file_name = graph_name + '-' + el + '-custom.json'
-
-        with open(os.path.join(CACHE_DIR, file_name), 'w') as f:
-            json.dump(detailed_info[el], f, ensure_ascii=False, indent=2)
+    # for el in detailed_info:
+    #
+    #     if openbio:
+    #         file_name = graph_name + '-' + el + '-openbio.json'
+    #     else:
+    #         file_name = graph_name + '-' + el + '-custom.json'
+    #
+    #     with open(os.path.join(CACHE_DIR, file_name), 'w') as f:
+    #         json.dump(detailed_info[el], f, ensure_ascii=False, indent=2)
 
 
 def filter_dataset(
-        dataset: dict,
-        graph_df: pd.DataFrame,
+    dataset: dict,
+    graph_df: pd.DataFrame,
 ) -> dict:
     """Filter dataset based on data in KG"""
     # TODO: Accept graph too.
@@ -587,14 +613,14 @@ ERRORS_ALLOWED = 1
 
 
 def get_validated_paths(
-        directed_graph: DiGraph,
-        source: str,
-        target: str,
-        all_paths: List[list],
-        drug_dict: dict,
-        disease_dict: dict,
-        clinical_pair_dict=dict,
-        fda_pairs=set,
+    directed_graph: DiGraph,
+    source: str,
+    target: str,
+    all_paths: List[list],
+    drug_dict: dict,
+    disease_dict: dict,
+    clinical_pair_dict=dict,
+    fda_pairs=set,
 ) -> dict:
     """Validate paths in KG"""
     _setup_logging(False)
@@ -668,13 +694,13 @@ def get_validated_paths(
 
 
 def get_transcriptomic_paths(
-        directed_graph: DiGraph,
-        source: str,
-        target: str,
-        all_paths: List[list],
-        drug_dict: dict,
-        disease_dict: dict,
-        clinical_pair_dict=dict,
+    directed_graph: DiGraph,
+    source: str,
+    target: str,
+    all_paths: List[list],
+    drug_dict: dict,
+    disease_dict: dict,
+    clinical_pair_dict=dict,
 ) -> [dict, dict]:
     """Validate paths in KG based on the transcriptomic data. """
     _setup_logging(False)
@@ -720,8 +746,8 @@ def get_transcriptomic_paths(
 
 
 def get_path_count(
-        directed_graph: DiGraph,
-        filtered_paths: list
+    directed_graph: DiGraph,
+    filtered_paths: list
 ) -> (int, int):
     """Count number of activatory and inhibitory paths. """
     activatory_paths = 0
