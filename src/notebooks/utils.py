@@ -620,7 +620,7 @@ def get_validated_paths(
     drug_dict: dict,
     disease_dict: dict,
     clinical_pair_dict=dict,
-    fda_pairs=set,
+    indication_pair_dict=dict,
 ) -> dict:
     """Validate paths in KG"""
     _setup_logging(False)
@@ -659,10 +659,10 @@ def get_validated_paths(
     else:
         trial_pair = False
 
-    if pair in fda_pairs:
-        fda_val = True
+    if pair in indication_pair_dict:
+        indication_pair = True
     else:
-        fda_val = False
+        indication_pair = False
 
     # Count number of activatory and inhibitory paths
     activatory_paths = 0
@@ -684,7 +684,7 @@ def get_validated_paths(
         "number_of_paths": len(all_paths),
         "number_of_concordant_paths": len(validate_paths),
         "in_clinical_trial": trial_pair,
-        "in_fda": fda_val,
+        "in_drug_indication": indication_pair,
         "number_of_concordant_activatory_paths": activatory_paths,
         "number_of_concordant_inhibitory_paths": inhibitory_paths,
         "subgraph_size": directed_graph.number_of_nodes(),
@@ -701,6 +701,7 @@ def get_transcriptomic_paths(
     drug_dict: dict,
     disease_dict: dict,
     clinical_pair_dict=dict,
+    drug_indication_dict=dict,
 ) -> [dict, dict]:
     """Validate paths in KG based on the transcriptomic data. """
     _setup_logging(False)
@@ -731,11 +732,17 @@ def get_transcriptomic_paths(
     else:
         trial_pair = False
 
+    if pair in drug_indication_dict:
+        indication_pair = True
+    else:
+        indication_pair = False
+
     results = {
         "source": source,
         "target": target,
         "number_of_paths": len(all_paths),
         "in_clinical_trial": trial_pair,
+        "in_drug_indication": indication_pair,
         "drug_paths": drug_filtered_paths,
         "disease_paths": disease_filtered_paths,
         "subgraph_size": directed_graph.number_of_nodes(),
