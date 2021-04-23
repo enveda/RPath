@@ -450,19 +450,12 @@ def get_paths(
     graph_df: pd.DataFrame,
     disease_dict: dict,
     chemical_dict: dict,
-    graph_name: str,
-    openbio: bool
-) -> None:
+) -> dict:
     """Get paths in graph."""
     detailed_info = {}
 
     if not os.path.exists(DATA_DIR):
         os.makedirs(DATA_DIR)
-
-    # CACHE_DIR = os.path.join(DATA_DIR, 'lmax-pairs')
-    #
-    # if not os.path.exists(CACHE_DIR):
-    #     os.makedirs(CACHE_DIR)
 
     chemical_els = set(
         graph_df[
@@ -496,14 +489,6 @@ def get_paths(
         if chemical in chemical_els and disease in disease_els:
             for lmax in range(3, 8):
                 dict_key = f'lmax_{lmax}'
-
-                # if openbio:
-                #     file_name = graph_name + '-' + dict_key + '-openbio.json'
-                # else:
-                #     file_name = graph_name + '-' + dict_key + '-custom.json'
-                #
-                # if os.path.exists(os.path.join(CACHE_DIR, file_name)):
-                #     continue
 
                 if dict_key not in detailed_info:
                     detailed_info[dict_key] = []
@@ -543,16 +528,6 @@ def get_paths(
                     )
 
     return detailed_info
-
-    # for el in detailed_info:
-    #
-    #     if openbio:
-    #         file_name = graph_name + '-' + el + '-openbio.json'
-    #     else:
-    #         file_name = graph_name + '-' + el + '-custom.json'
-    #
-    #     with open(os.path.join(CACHE_DIR, file_name), 'w') as f:
-    #         json.dump(detailed_info[el], f, ensure_ascii=False, indent=2)
 
 
 def filter_dataset(
@@ -620,7 +595,7 @@ def get_validated_paths(
     drug_dict: dict,
     disease_dict: dict,
     clinical_pair_dict=dict,
-    fda_pairs=set,
+    indication_pair_dict=dict,
 ) -> dict:
     """Validate paths in KG"""
     _setup_logging(False)
@@ -659,10 +634,10 @@ def get_validated_paths(
     else:
         trial_pair = False
 
-    if pair in fda_pairs:
-        fda_val = True
+    if pair in indication_pair_dict:
+        indication_pair = True
     else:
-        fda_val = False
+        indication_pair = False
 
     # Count number of activatory and inhibitory paths
     activatory_paths = 0
@@ -684,7 +659,7 @@ def get_validated_paths(
         "number_of_paths": len(all_paths),
         "number_of_concordant_paths": len(validate_paths),
         "in_clinical_trial": trial_pair,
-        "in_fda": fda_val,
+        "in_drug_indication": indication_pair,
         "number_of_concordant_activatory_paths": activatory_paths,
         "number_of_concordant_inhibitory_paths": inhibitory_paths,
         "subgraph_size": directed_graph.number_of_nodes(),
@@ -701,6 +676,7 @@ def get_transcriptomic_paths(
     drug_dict: dict,
     disease_dict: dict,
     clinical_pair_dict=dict,
+    drug_indication_dict=dict,
 ) -> [dict, dict]:
     """Validate paths in KG based on the transcriptomic data. """
     _setup_logging(False)
@@ -731,11 +707,17 @@ def get_transcriptomic_paths(
     else:
         trial_pair = False
 
+    if pair in drug_indication_dict:
+        indication_pair = True
+    else:
+        indication_pair = False
+
     results = {
         "source": source,
         "target": target,
         "number_of_paths": len(all_paths),
         "in_clinical_trial": trial_pair,
+        "in_drug_indication": indication_pair,
         "drug_paths": drug_filtered_paths,
         "disease_paths": disease_filtered_paths,
         "subgraph_size": directed_graph.number_of_nodes(),
