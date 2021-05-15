@@ -1,30 +1,29 @@
 # -*- coding: utf-8 -*-
 
-"""
-    Util functions used in notebook
-"""
+"""Utils to be used in notebooks"""
 
-import os
-import json
-import logging
 import ast
-import pandas as pd
+import logging
+import os
 from collections import Counter, defaultdict
-from tqdm import tqdm
 from itertools import product
-from typing import Mapping, List
+from typing import Mapping, List, Dict
 
-from venn import venn
-from networkx import DiGraph, connected_components, has_path
 import matplotlib.pyplot as plt
+import pandas as pd
 import plotly.graph_objects as go
-
 from drug2ways.alternative_graph_traversal import enumerate_paths
-from drug2ways.pathway import _prepare_json
-from drug2ways.wrapper import generate_reduced_graph
-from drug2ways.rcr import (rcr_all_paths, validate_paths_with_disease_data,
-                           disease_rcr_all_paths)
 from drug2ways.cli_helper import _setup_logging
+from drug2ways.pathway import _prepare_json
+from drug2ways.rcr import (
+    rcr_all_paths,
+    validate_paths_with_disease_data,
+    disease_rcr_all_paths,
+)
+from drug2ways.wrapper import generate_reduced_graph
+from networkx import DiGraph, connected_components
+from tqdm import tqdm
+from venn import venn
 
 # XREF paths
 DATA_DIR = '../../data'
@@ -32,12 +31,11 @@ KG_DATA_PATH = os.path.join(DATA_DIR, 'kg')
 
 logger = logging.getLogger(__name__)
 
-
 """Notebook 1"""
 
 
 def create_venn_diagram(
-    data_dict: dict,
+    data_dict: Dict,
     plot_title: str,
 ) -> plt:
     venn(data_dict)
@@ -46,10 +44,10 @@ def create_venn_diagram(
 
 
 def get_stats(
-    network_1: dict,
-    network_2: dict,
-    disease_set: dict = None,
-    chemical_set: dict = None
+    network_1: Dict,
+    network_2: Dict,
+    disease_set: Dict = None,
+    chemical_set: Dict = None
 ) -> None:
     """Get KG overlap information."""
 
@@ -143,7 +141,7 @@ def create_df_from_graph(
                 'target': target,
                 'polarity': relation['polarity']
             },
-            index=[1,]
+            index=[1, ]
         )
         df = pd.concat([df, tmp_df], ignore_index=True)
 
@@ -157,7 +155,7 @@ def _validation_paths(
     reduced_graph: DiGraph,
     paths: List[List[int]],
     id2node: Mapping[int, str],
-) -> [dict, set]:
+) -> [Dict, set]:
     """Get paths between nodes."""
     results = defaultdict(Counter)
 
@@ -206,8 +204,8 @@ def _validation_paths(
 
 def get_paths(
     graph: DiGraph,
-    disease_dict: dict,
-    chemical_dict: dict,
+    disease_dict: Dict,
+    chemical_dict: Dict,
 ) -> dict:
     """Get paths in graph."""
     detailed_info = {}
@@ -283,11 +281,10 @@ def get_paths(
 
 
 def filter_dataset(
-    dataset: dict,
+    dataset: Dict,
     graph_df: pd.DataFrame,
 ) -> dict:
     """Filter dataset based on data in KG"""
-    # TODO: Accept graph too.
     chemical_nodes = set(
         graph_df[
             graph_df['source'].str.contains('pubchem.compound')
@@ -342,9 +339,9 @@ def get_validated_paths(
     source: str,
     target: str,
     all_paths: List[list],
-    drug_dict: dict,
-    disease_dict: dict,
-    clinical_pair_dict: dict,
+    drug_dict: Dict,
+    disease_dict: Dict,
+    clinical_pair_dict: Dict,
 ) -> dict:
     """Validate paths in KG"""
     _setup_logging(False)
@@ -417,10 +414,10 @@ def get_transcriptomic_paths(
     source: str,
     target: str,
     all_paths: List[list],
-    drug_dict: dict,
-    disease_dict: dict,
-    clinical_pair_dict=dict,
-) -> [dict, dict]:
+    drug_dict: Dict,
+    disease_dict: Dict,
+    clinical_pair_dict=Dict,
+) -> [Dict, Dict]:
     """Validate paths in KG based on the transcriptomic data. """
     _setup_logging(False)
 
