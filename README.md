@@ -3,7 +3,7 @@
   <img src="data/img/logo.jpg" alt="logo" width="200"/>
 </p>
 
-Source code and data presented in "Causal reasoning over knowledge graphs leveraging multimodal transcriptomic signatures for drug discovery".
+Source code and data presented in "Causal reasoning over knowledge graphs leveraging drug-perturbed and disease-specific transcriptomic signatures for drug discovery".
 
 ## Structure
 
