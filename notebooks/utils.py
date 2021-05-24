@@ -257,7 +257,7 @@ def get_paths(
         desc='Getting paths'
     ):
         if chemical in chemical_els and disease in disease_els:
-            for lmax in range(5, 8):
+            for lmax in range(3, 8):
                 dict_key = f'lmax_{lmax}'
 
                 if dict_key not in detailed_info:
