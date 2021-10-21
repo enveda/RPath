@@ -360,7 +360,7 @@ def get_validated_paths(
     all_paths: List[list],
     drug_dict: Dict,
     disease_dict: Dict,
-    clinical_pair_dict: Dict,
+    clinical_pair_dict: Dict = None,
 ) -> Dict:
     """Validate paths in KG"""
     _setup_logging(False)
@@ -395,11 +395,6 @@ def get_validated_paths(
     # Check if pair in clinical trials dicts
     pair = source + '_' + target
 
-    if pair in clinical_pair_dict:
-        trial_pair = True
-    else:
-        trial_pair = False
-
     # Count number of activatory and inhibitory paths
     activatory_paths = 0
     for path in validate_paths:
@@ -419,12 +414,19 @@ def get_validated_paths(
         "target": target,
         "number_of_paths": len(all_paths),
         "number_of_concordant_paths": len(validate_paths),
-        "in_clinical_trial": trial_pair,
         "number_of_concordant_activatory_paths": activatory_paths,
         "number_of_concordant_inhibitory_paths": inhibitory_paths,
         "subgraph_size": directed_graph.number_of_nodes(),
         "number_of_unique_nodes": len(nodes),
     }
+
+    if clinical_pair_dict:
+        if pair in clinical_pair_dict:
+            trial_pair = True
+        else:
+            trial_pair = False
+        results["in_clinical_trial"] = trial_pair
+
     return results
 
 
