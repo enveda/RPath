@@ -1,0 +1,343 @@
+curie	name	source
+pubchem.compound:5282181	Alfacalcidol	creed | Custom KG
+pubchem.compound:446541	Mycophenolic acid	creed | OpenBiolink KG | Custom KG
+pubchem.compound:9444	Azacitidine	lc1000 | creed | OpenBiolink KG | Custom KG
+pubchem.compound:996	Phenol	creed | OpenBiolink KG
+pubchem.compound:444795	Tretinoin	OpenBiolink KG | creed | lc1000
+pubchem.compound:702	Ethanol	creed | OpenBiolink KG | Custom KG
+pubchem.compound:4158	Methylphenidate	creed | OpenBiolink KG | Custom KG
+pubchem.compound:6253	Cytarabine	creed | lc1000 | Custom KG
+pubchem.compound:3033	Diclofenac	creed | Custom KG
+pubchem.compound:5280343	Quercetin	creed | OpenBiolink KG
+pubchem.compound:4075	Mesalamine	creed | OpenBiolink KG | Custom KG
+pubchem.compound:5280453	Calcitriol	creed | OpenBiolink KG | Custom KG
+pubchem.compound:2375	Bicalutamide	creed | OpenBiolink KG | Custom KG
+pubchem.compound:126941	Methotrexate	creed | OpenBiolink KG | Custom KG
+pubchem.compound:5284616	Sirolimus	lc1000 | creed | OpenBiolink KG | Custom KG
+pubchem.compound:444008	Tibolone	creed | lc1000 | Custom KG
+pubchem.compound:36314	Paclitaxel	creed | OpenBiolink KG | Custom KG
+pubchem.compound:5282379	Isotretinoin	OpenBiolink KG | creed | lc1000
+pubchem.compound:2764	Ciprofloxacin	creed | OpenBiolink KG | Custom KG
+pubchem.compound:5743	Dexamethasone	lc1000 | creed | OpenBiolink KG | Custom KG
+pubchem.compound:137	Aminolevulinic acid	lc1000 | creed | OpenBiolink KG | Custom KG
+pubchem.compound:37542	Ribavirin	creed | OpenBiolink KG | Custom KG
+pubchem.compound:5360373	Bleomycin a2	creed | OpenBiolink KG | Custom KG
+pubchem.compound:10635	Androstanolone	creed | OpenBiolink KG
+pubchem.compound:4171	Metoprolol	creed | OpenBiolink KG | Custom KG
+pubchem.compound:149096	Levofloxacin	lc1000 | creed | OpenBiolink KG | Custom KG
+pubchem.compound:2771	Citalopram	creed | OpenBiolink KG | Custom KG
+pubchem.compound:72474	Grepafloxacin	creed
+pubchem.compound:4091	Metformin	lc1000 | creed | OpenBiolink KG | Custom KG
+pubchem.compound:62959	Trovafloxacin	creed
+pubchem.compound:4943	Propofol	creed | OpenBiolink KG | Custom KG
+pubchem.compound:3658	Hydroxyzine	creed | Custom KG
+pubchem.compound:31703	Doxorubicin	creed | OpenBiolink KG | Custom KG
+pubchem.compound:2733526	Tamoxifen	creed | lc1000 | Custom KG
+pubchem.compound:145068	Nitric oxide	creed | OpenBiolink KG | Custom KG
+pubchem.compound:2265	Azathioprine	lc1000 | creed | OpenBiolink KG | Custom KG
+pubchem.compound:2708	Chlorambucil	OpenBiolink KG | creed | lc1000
+pubchem.compound:6013	Testosterone	creed | OpenBiolink KG | Custom KG
+pubchem.compound:3385	5-Fluorouracil	OpenBiolink KG | creed | lc1000
+pubchem.compound:4078	Mesoridazine	lc1000 | Custom KG
+pubchem.compound:5311412	Rimexolone	lc1000 | Custom KG
+pubchem.compound:3647	Hydroflumethiazide	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:5281004	Budesonide	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:54687	Pravastatin	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:2145	Aminoglutethimide	lc1000 | Custom KG
+pubchem.compound:23725625	Olaparib	OpenBiolink KG | lc1000
+pubchem.compound:2118	Alprazolam	lc1000 | Custom KG
+pubchem.compound:34359	Carbidopa	lc1000 | Custom KG
+pubchem.compound:5311067	Desoximetasone	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:4633	Oxybuprocaine	OpenBiolink KG | lc1000
+pubchem.compound:71384	Dexrazoxane	lc1000
+pubchem.compound:5833	Spironolactone	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:64139	Efavirenz	lc1000
+pubchem.compound:457193	Dactinomycin	lc1000 | Custom KG
+pubchem.compound:4062	Mepivacaine	OpenBiolink KG | lc1000
+pubchem.compound:3343	Fenoterol	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:3957	Loratadine	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:6918638	Belinostat	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:4911	Probenecid	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:2955	Dapsone	OpenBiolink KG | lc1000
+pubchem.compound:447043	Azithromycin	OpenBiolink KG | lc1000
+pubchem.compound:4507	Nitrendipine	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:3715	Indomethacin	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:2082	Albendazole	lc1000 | Custom KG
+pubchem.compound:5282230	Tranilast	OpenBiolink KG | lc1000
+pubchem.compound:1549000	Levocetirizine	lc1000 | Custom KG
+pubchem.compound:11683	Megestrol acetate	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:5503	Tolazamide	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:5320	Sulfacetamide	lc1000
+pubchem.compound:3476	Glimepiride	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:445354	Retinol	OpenBiolink KG | lc1000
+pubchem.compound:16129706	Somatostatin	lc1000
+pubchem.compound:3686	Idebenone	lc1000
+pubchem.compound:3365	Fluconazole	OpenBiolink KG | lc1000
+pubchem.compound:5665	Vigabatrin	lc1000 | Custom KG
+pubchem.compound:4211	Mitotane	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:32798	Clobetasol propionate	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:445643	Tacrolimus	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:5505	Tolbutamide	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:38853	Methyldopa	lc1000 | Custom KG
+pubchem.compound:5284373	Cyclosporin A	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:71360	Iloperidone	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:82153	Flunisolide	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:5283731	Calcifediol	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:6010	Methyltestosterone	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:6215	Fluocinolone acetonide	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:41684	Nitazoxanide	lc1000
+pubchem.compound:7699	Benzonatate	lc1000 | Custom KG
+pubchem.compound:36462	Etoposide	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:4485	Nifedipine	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:2794	Clofazimine	OpenBiolink KG | lc1000
+pubchem.compound:4114	Methoxsalen	OpenBiolink KG | lc1000
+pubchem.compound:3372	Fluphenazine	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:33572	Ritodrine	lc1000 | Custom KG
+pubchem.compound:2913	Cyproheptadine	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:4993	Pyrimethamine	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:2796	Clofibrate	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:5073	Risperidone	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:4474	Nicardipine	lc1000 | Custom KG
+pubchem.compound:2756	Cimetidine	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:6047	Levodopa	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:3825	Ketoprofen	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:60149	Sertindole	OpenBiolink KG | lc1000
+pubchem.compound:3059	Diflunisal	lc1000 | Custom KG
+pubchem.compound:3114	Disopyramide	lc1000 | Custom KG
+pubchem.compound:107807	Perindopril	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:3396	Fluspirilene	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:2478	Busulfan	OpenBiolink KG | lc1000
+pubchem.compound:4830	Pipamperone	OpenBiolink KG | lc1000
+pubchem.compound:60854	Ziprasidone	lc1000 | Custom KG
+pubchem.compound:68617	Sertraline	lc1000 | Custom KG
+pubchem.compound:4477	Niclosamide	OpenBiolink KG | lc1000
+pubchem.compound:4201	Minoxidil	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:5280360	Dinoprostone	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:57363	Finasteride	lc1000 | Custom KG
+pubchem.compound:4636	Oxymetazoline	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:6726	Cyclizine	lc1000 | Custom KG
+pubchem.compound:3826	Ketorolac	lc1000 | Custom KG
+pubchem.compound:2993	Dequalinium	lc1000 | Custom KG
+pubchem.compound:5405	Terfenadine	OpenBiolink KG | lc1000
+pubchem.compound:33741	Tramadol	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:5284513	Acitretin	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:5564	Triclosan	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:9931954	Rucaparib	lc1000 | Custom KG
+pubchem.compound:3488	Glyburide	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:5904	Penicillin g	OpenBiolink KG | lc1000
+pubchem.compound:4100	Methazolamide	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:40692	(-)-Mefloquine	OpenBiolink KG | lc1000
+pubchem.compound:2315	Bendroflumethiazide	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:5311304	Nalbuphine	lc1000 | Custom KG
+pubchem.compound:4168	Metoclopramide	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:4044	Mefenamic acid	lc1000 | Custom KG
+pubchem.compound:3958	Lorazepam	lc1000 | Custom KG
+pubchem.compound:4737	Pentobarbital	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:11625818	Idelalisib	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:4748	Perphenazine	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:3883	Lansoprazole	lc1000
+pubchem.compound:4583	Ofloxacin	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:2378	Bifonazole	lc1000
+pubchem.compound:5472	Ticlopidine	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:8226	Methylergonovine	lc1000 | Custom KG
+pubchem.compound:5311217	Lacidipine	lc1000 | Custom KG
+pubchem.compound:441383	Terconazole	lc1000
+pubchem.compound:16231	Amiloride	lc1000 | Custom KG
+pubchem.compound:3386	Fluoxetine	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:4235	Moclobemide	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:13109	Levonorgestrel	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:2724385	Digoxin	lc1000 | Custom KG
+pubchem.compound:4594	Omeprazole	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:3948	Lomefloxacin	lc1000 | Custom KG
+pubchem.compound:2083	Salbutamol	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:3156	Doxapram	lc1000 | Custom KG
+pubchem.compound:3559	Haloperidol	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:12560	Erythromycin	OpenBiolink KG | lc1000
+pubchem.compound:441074	Quinidine	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:44093	Captopril	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:65863	Sertaconazole	lc1000
+pubchem.compound:4912	Probucol	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:3478	Glipizide	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:15209	Flurandrenolide	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:3157	Doxazosin	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:4828	Pindolol	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:5531	Trapidil	OpenBiolink KG | lc1000
+pubchem.compound:5745	Cortisone acetate	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:3447	Gabexate	OpenBiolink KG | lc1000
+pubchem.compound:5282138	Cilnidipine	lc1000
+pubchem.compound:60198	Exemestane	lc1000 | Custom KG
+pubchem.compound:4761	Pheniramine	lc1000 | Custom KG
+pubchem.compound:2763	Ciprofibrate	OpenBiolink KG | lc1000
+pubchem.compound:2797	Clofibric acid	OpenBiolink KG | lc1000
+pubchem.compound:2092	Alfuzosin	lc1000 | Custom KG
+pubchem.compound:3339	Fenofibrate	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:9782	Betamethasone	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:4197	Milrinone	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:3547	Fasudil	OpenBiolink KG | lc1000
+pubchem.compound:39147	Nadolol	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:16362	Pimozide	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:5386	Tegafur	lc1000 | Custom KG
+pubchem.compound:2732	Chlorthalidone	lc1000 | Custom KG
+pubchem.compound:5330286	Palbociclib	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:564	Aminocaproic acid	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:124087	Desloratadine	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:5281881	Flupentixol	lc1000
+pubchem.compound:3961	Losartan	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:55245	Mifepristone	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:5639	Urapidil	OpenBiolink KG | lc1000
+pubchem.compound:5717	Zafirlukast	lc1000 | Custom KG
+pubchem.compound:5095	Ropinirole	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:5360696	Dextromethorphan	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:3333	Felodipine	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:5775	Phentolamine	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:3759	Isocarboxazid	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:16363	Benperidol	lc1000
+pubchem.compound:5983	Physostigmine	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:5280723	Alprostadil	OpenBiolink KG | lc1000
+pubchem.compound:4184	Mianserin	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:1547484	Cinnarizine	lc1000
+pubchem.compound:657298	Propylthiouracil	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:4011	Maprotiline	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:40839	Vindesine	lc1000 | Custom KG
+pubchem.compound:5311181	Iloprost	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:2719	Chloroquine	OpenBiolink KG | lc1000
+pubchem.compound:2471	Bumetanide	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:3108	Dipyridamole	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:3308	Etodolac	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:5468	Tiaprofenic acid	lc1000 | Custom KG
+pubchem.compound:6256	Trifluridine	lc1000 | Custom KG
+pubchem.compound:3341	Fenoldopam	lc1000 | Custom KG
+pubchem.compound:24826799	Ponatinib	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:6167	Colchicine	OpenBiolink KG | lc1000
+pubchem.compound:44462760	Dabrafenib	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:119607	Valdecoxib	lc1000
+pubchem.compound:20279	Cladribine	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:3784	Isradipine	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:3105	Dipivefrin	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:4909	Primidone	lc1000 | Custom KG
+pubchem.compound:5281037	Eprosartan	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:2162	Amlodipine	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:6230	Norethindrone	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:5593	Tropicamide	lc1000 | Custom KG
+pubchem.compound:5790	Floxuridine	OpenBiolink KG | lc1000
+pubchem.compound:5288783	Calcipotriol	lc1000 | Custom KG
+pubchem.compound:40632	Pirfenidone	OpenBiolink KG | lc1000
+pubchem.compound:3475	Gliclazide	OpenBiolink KG | lc1000
+pubchem.compound:12035	Acetylcysteine	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:5362129	Ramipril	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:5426	Thalidomide	OpenBiolink KG | lc1000
+pubchem.compound:3964	Loxapine	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:5770	Reserpine	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:6714002	Prednicarbate	lc1000 | Custom KG
+pubchem.compound:638034	Retinyl acetate	lc1000
+pubchem.compound:3314	Eugenol	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:5070	Riluzole	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:667477	Sinequan	lc1000
+pubchem.compound:5344	Sulfisoxazole	OpenBiolink KG | lc1000
+pubchem.compound:3168	Droperidol	lc1000 | Custom KG
+pubchem.compound:4916	Pro-Air	OpenBiolink KG | lc1000
+pubchem.compound:1548943	Capsaicin	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:5090	Rofecoxib	lc1000
+pubchem.compound:3397	Flutamide	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:6741	Methylprednisolone	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:3151	Domperidone	lc1000 | Custom KG
+pubchem.compound:667550	Dexketoprofen	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:91610	Gliquidone	lc1000 | Custom KG
+pubchem.compound:30323	Daunorubicin	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:2554	Carbamazepine	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:5917	Pentetrazol	OpenBiolink KG | lc1000
+pubchem.compound:92727	Lopinavir	lc1000
+pubchem.compound:6178111	Proguanil	OpenBiolink KG | lc1000
+pubchem.compound:4932	Propafenone	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:68844	Brinzolamide	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:4499	Nisoldipine	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:9829523	Midostaurin	lc1000 | Custom KG
+pubchem.compound:10631	Medroxyprogesterone	OpenBiolink KG | lc1000
+pubchem.compound:441314	Miglitol	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:448537	Diethylstilbestrol	OpenBiolink KG | lc1000
+pubchem.compound:34040	Nicergoline	lc1000 | Custom KG
+pubchem.compound:708857	Pyrantel	lc1000 | Custom KG
+pubchem.compound:5546	Triamterene	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:3121	Valproic acid	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:4170	Metolazone	OpenBiolink KG | lc1000
+pubchem.compound:11707110	Trametinib	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:68870	Tianeptine	OpenBiolink KG | lc1000
+pubchem.compound:10607	Podofilox	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:3652	Hydroxychloroquine	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:3671	Ibudilast	OpenBiolink KG | lc1000
+pubchem.compound:4497	Nimodipine	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:54454	Simvastatin	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:26987	Clemastine	lc1000 | Custom KG
+pubchem.compound:9904	Nandrolone	OpenBiolink KG | lc1000
+pubchem.compound:60490	Zileuton	lc1000
+pubchem.compound:3019	Diazoxide	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:2477	Buspirone	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:4775	4-Phenylbutyric acid	OpenBiolink KG | lc1000
+pubchem.compound:456201	Xolegel	OpenBiolink KG | lc1000
+pubchem.compound:31307	Triamcinolone	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:3676	Lidocaine	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:53232	Lovastatin	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:4107	Methocarbamol	lc1000 | Custom KG
+pubchem.compound:1548887	Sulindac	lc1000 | Custom KG
+pubchem.compound:3117	Disulfiram	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:39562	Lonidamine	OpenBiolink KG | lc1000
+pubchem.compound:2132	Ambroxol	OpenBiolink KG | lc1000
+pubchem.compound:5453	Thiotepa	lc1000
+pubchem.compound:941361	Flunarizine	lc1000 | Custom KG
+pubchem.compound:3463	Gemfibrozil	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:3278	Ethacrynic acid	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:4649	4-Aminosalicylic acid	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:3038	Dichlorphenamide	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:3366	Flucytosine	lc1000
+pubchem.compound:3373	Flumazenil	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:8378	Neomycin	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:2812	Clotrimazole	lc1000 | OpenBiolink KG | Custom KG
+pubchem.compound:4030	Mebendazole	lc1000 | OpenBiolink KG | Custom KG
+mondo:0005575	colorectal cancer	OpenBiolink KG | Custom KG | geo | open target
+mondo:0018876	mantle cell lymphoma	geo | Custom KG
+mondo:0007915	systemic lupus erythematosus \(disease\)	geo | open target | Custom KG
+mondo:0009693	plasma cell myeloma	geo | open target | Custom KG
+mondo:0011122	obesity disorder	OpenBiolink KG | Custom KG | geo | open target
+mondo:0007959	medulloblastoma	OpenBiolink KG | Custom KG | geo | open target
+mondo:0005068	myocardial infarction \(disease\)	geo | Custom KG
+mondo:0004975	Alzheimer disease	OpenBiolink KG | geo | open target
+mondo:0008170	ovarian cancer	OpenBiolink KG | geo | Custom KG
+mondo:0019338	sarcoidosis	geo | open target | Custom KG
+mondo:0004979	asthma	geo | open target | Custom KG
+mondo:0008315	prostate cancer	OpenBiolink KG | geo | Custom KG
+mondo:0004948	B\-cell chronic lymphocytic leukemia	OpenBiolink KG | Custom KG | geo | open target
+mondo:0018874	acute myeloid leukemia	OpenBiolink KG | Custom KG | geo | open target
+mondo:0005301	multiple sclerosis	geo | open target | Custom KG
+mondo:0018881	myelodysplastic syndrome	OpenBiolink KG | Custom KG | geo | open target
+mondo:0005090	schizophrenia \(disease\)	geo | open target | Custom KG
+mondo:0005105	melanoma \(disease\)	OpenBiolink KG | Custom KG | geo | open target
+mondo:0013662	Barrett esophagus	open target | Custom KG
+mondo:0009245	Friedreich ataxia	open target | Custom KG
+mondo:0011655	alveolar soft part sarcoma \(disease\)	open target | Custom KG
+mondo:0004976	amyotrophic lateral sclerosis	open target | Custom KG
+mondo:0001347	facioscapulohumeral muscular dystrophy	OpenBiolink KG | open target
+mondo:0008345	idiopathic pulmonary fibrosis	OpenBiolink KG | open target | Custom KG
+mondo:0005101	ulcerative colitis \(disease\)	open target
+mondo:0008433	small cell lung carcinoma	open target | Custom KG
+mondo:0005015	diabetes mellitus \(disease\)	OpenBiolink KG | open target | Custom KG
+mondo:0007256	hepatocellular carcinoma	OpenBiolink KG | open target | Custom KG
+mondo:0005265	inflammatory bowel disease	open target | Custom KG
+mondo:0005580	esophageal squamous cell carcinoma	open target | Custom KG
+mondo:0005027	epilepsy	open target | Custom KG
+mondo:0006639	adrenal cortex carcinoma	OpenBiolink KG | open target | Custom KG
+mondo:0008383	rheumatoid arthritis	open target | Custom KG
+mondo:0012883	acute promyelocytic leukemia	open target | Custom KG
+mondo:0018177	glioblastoma \(disease\)	open target | Custom KG
+mondo:0019064	hereditary spastic paraplegia	open target | Custom KG
+mondo:0005096	squamous cell carcinoma	open target | Custom KG
+mondo:0018905	diffuse large B\-cell lymphoma	open target | Custom KG
+mondo:0008487	polycystic ovary syndrome	open target | Custom KG
+mondo:0005180	Parkinson disease	OpenBiolink KG | open target | Custom KG
+mondo:0005147	type 1 diabetes mellitus	open target
+mondo:0004983	azoospermia	open target | Custom KG
+mondo:0005072	neuroblastoma	OpenBiolink KG | open target
+mondo:0005021	dilated cardiomyopathy	OpenBiolink KG | open target | Custom KG
+mondo:0010679	Duchenne muscular dystrophy	OpenBiolink KG | open target | Custom KG
+mondo:0004982	pancreatitis	open target | Custom KG
+mondo:0011996	chronic myelogenous leukemia\, BCR\-ABL1 positive	OpenBiolink KG | open target | Custom KG
+mondo:0005240	kidney disease	open target | Custom KG
