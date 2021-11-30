@@ -1,0 +1,49 @@
+curie name	mapped curie	raw curie	source
+medulloblastoma	mondo:0007959	doid:50902,doid:0060104 | efo:0002939	geo | open target
+colorectal cancer	mondo:0005575	doid:9256,doid:5672 | efo:0005842	geo | open target
+obesity disorder	mondo:0011122	efo:0001073 | doid:9970	geo | open target
+acute myeloid leukemia	mondo:0018874	doid:9119 | efo:0000222	geo | open target
+multiple sclerosis	mondo:0005301	doid:2377 | efo:0003885	geo | open target
+schizophrenia	mondo:0005090	efo:0000692 | doid:5419	geo | open target
+Alzheimer disease	mondo:0004975	doid:10652 | efo:0000249	geo | open target
+myelodysplastic syndrome	mondo:0018881	efo:0000198 | doid:50908	geo | open target
+asthma	mondo:0004979	doid:2841 | efo:0000270	geo | open target
+ovarian cancer	mondo:0008170	doid:2394	geo
+melanoma	mondo:0005105	efo:0000756 | doid:1909	geo | open target
+plasma cell myeloma	mondo:0009693	doid:9538 | efo:0001378	geo | open target
+prostate cancer	mondo:0008315	doid:10283	geo
+mantle cell lymphoma	mondo:0018876	doid:50746	geo
+B-cell chronic lymphocytic leukemia	mondo:0004948	efo:0000095 | doid:1040	geo | open target
+systemic lupus erythematosus	mondo:0007915	doid:9074 | efo:0002690	geo | open target
+myocardial infarction	mondo:0005068	doid:5844	geo
+sarcoidosis	mondo:0019338	doid:11335 | orphanet:797	geo | open target
+acute promyelocytic leukemia	mondo:0012883	efo:0000224	open target
+adrenal cortex carcinoma	mondo:0006639	efo:1000796	open target
+alveolar soft part sarcoma	mondo:0011655	efo:0007143	open target
+amyotrophic lateral sclerosis	mondo:0004976	efo:0000253	open target
+azoospermia	mondo:0004983	efo:0000279	open target
+Barrett esophagus	mondo:0013662	efo:0000280	open target
+chronic myelogenous leukemia, BCR-ABL1 positive	mondo:0011996	efo:0000339	open target
+diabetes mellitus	mondo:0005015	efo:0000400	open target
+diffuse large B-cell lymphoma	mondo:0018905	efo:0000403	open target
+dilated cardiomyopathy	mondo:0005021	efo:0000407	open target
+Duchenne muscular dystrophy	mondo:0010679	orphanet:98896	open target
+epilepsy	mondo:0005027	efo:0000474	open target
+esophageal squamous cell carcinoma	mondo:0005580	efo:0005922	open target
+facioscapulohumeral muscular dystrophy	mondo:0001347	orphanet:269	open target
+Friedreich ataxia	mondo:0009245	orphanet:95	open target
+glioblastoma	mondo:0018177	orphanet:360	open target
+hepatocellular carcinoma	mondo:0007256	efo:0000182	open target
+hereditary spastic paraplegia	mondo:0019064	orphanet:685	open target
+idiopathic pulmonary fibrosis	mondo:0008345	efo:0000768	open target
+inflammatory bowel disease	mondo:0005265	efo:0003767	open target
+kidney disease	mondo:0005240	efo:0003086	open target
+neuroblastoma	mondo:0005072	efo:0000621	open target
+pancreatitis	mondo:0004982	efo:0000278	open target
+Parkinson disease	mondo:0005180	efo:0002508	open target
+polycystic ovary syndrome	mondo:0008487	efo:0000660	open target
+rheumatoid arthritis	mondo:0008383	efo:0000685	open target
+small cell lung carcinoma	mondo:0008433	efo:0000702	open target
+squamous cell carcinoma	mondo:0005096	efo:0000707	open target
+type 1 diabetes mellitus	mondo:0005147	efo:0001359	open target
+ulcerative colitis	mondo:0005101	efo:0000729	open target
