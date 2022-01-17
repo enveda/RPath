@@ -4,7 +4,7 @@
 - `gold-standard`: Drug-disease pairs investigated in clinical trials.
 - `img`: logo 
 - `kg`: KGs used in the paper.
-- `manuak_drug_disease_mapping.tsv`: Mappings across terminologies for drug and diseases used.
+- `manual_drug_disease_mapping.tsv`: Mappings across terminologies for drug and diseases used.
 - `transcriptomics`: Harmonized transcriptomics datasets.
 
 ## Folder strcture
