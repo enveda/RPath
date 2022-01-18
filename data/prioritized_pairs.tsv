@@ -1,0 +1,19 @@
+source	chemical_name	target	disease_name	dataset_name(s)	subgraph_name	clinical_trials
+pubchem.compound:2375	Bicalutamide	mondo:0008315	prostate cancer	creed_geo	custom	yes
+pubchem.compound:24826799	Ponatinib	mondo:0018874	acute myeloid leukemia	lc1000_target, lc1000_geo	custom	yes
+pubchem.compound:2733526	Tamoxifen	mondo:0011122	obesity disorder	lc1000_target, lc1000_geo	custom	yes
+pubchem.compound:3385	5-Fluorouracil	mondo:0008170	ovarian cancer	lc1000_geo	openbio	yes
+pubchem.compound:4091	Metformin	mondo:0011122	obesity disorder	creed_target	openbio	yes
+pubchem.compound:5284616	Sirolimus	mondo:0004948	B-cell chronic lymphocytic leukemia	lc1000_target, lc1000_geo	openbio	yes
+pubchem.compound:5284616	Sirolimus	mondo:0005015	diabetes mellitus (disease)	lc1000_target	openbio	yes
+pubchem.compound:5284616	Sirolimus	mondo:0007256	hepatocellular carcinoma	lc1000_target	openbio	yes
+pubchem.compound:6918638	Belinostat	mondo:0004948	B-cell chronic lymphocytic leukemia	lc1000_target, lc1000_geo	openbio	yes
+pubchem.compound:6918638	Belinostat	mondo:0007256	hepatocellular carcinoma	lc1000_target	openbio	yes
+pubchem.compound:9444	Azacitidine	mondo:0004948	B-cell chronic lymphocytic leukemia	lc1000_target, lc1000_geo	openbio	yes
+pubchem.compound:24826799	Ponatinib	mondo:0009693	plasma cell myeloma	lc1000_geo, lc1000_target	custom	no
+pubchem.compound:3826	Ketorolac	mondo:0013662	Barrett esophagus	lc1000_target	custom	no
+pubchem.compound:4075	Mesalamine	mondo:0011122	obesity disorder	creed_geo, creed_target	openbio, custom	no
+pubchem.compound:5281004	Budesonide	mondo:0018874	acute myeloid leukemia	lc1000_geo, lc1000_target	openbio	no
+pubchem.compound:5284616	Sirolimus	mondo:0006639	adrenal cortex carcinoma	lc1000_target	openbio	no
+pubchem.compound:9444	Azacitidine	mondo:0006639	adrenal cortex carcinoma	lc1000_target	openbio	no
+pubchem.compound:9444	Azacitidine	mondo:0007256	hepatocellular carcinoma	lc1000_target	openbio	no
