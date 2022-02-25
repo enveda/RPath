@@ -37,6 +37,6 @@ The overall model usage example is shown in [notebook 4](notebooks/4.0-subgraph_
 ## Citation
 If you have found RPath useful in your work, please consider citing:
 
-Domingo-Fernandez, D., Gadiya, Y., Patel, A., Mubeen, S., Rivas-Barragan, D., Diana, C., B Misra, B., Healey, D., Rokicki, J., Colluru, V. (2021).
-Causal reasoning over knowledge graphs leveraging drug-perturbed and disease-specific transcriptomic signatures for drug discovery. bioRxiv 2021.09.12.459579.
-doi: https://doi.org/10.1101/2021.09.12.459579
+> Domingo-Fernandez, D., Gadiya, Y., Patel, A., Mubeen, S., Rivas-Barragan, D., Diana, C., B Misra, B., Healey, D., Rokicki, J., Colluru, V. (2022).
+Causal reasoning over knowledge graphs leveraging drug-perturbed and disease-specific transcriptomic signatures for drug discovery. *PLoS computational biology*.
+[DOI](https://doi.org/10.1371/journal.pcbi.1009909)
